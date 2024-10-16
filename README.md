@@ -11,7 +11,7 @@ There are several ways to install the Morning Greetings package:
 You can install the latest version directly from the GitHub repository:
 
 ```
-pip install git+https://github.com/yourusername/morning_greetings.git
+pip install git+[https://github.com/yourusername/morning_greetings.git](https://github.com/vasstha/problem_scripting_assignment_2.git)
 ```
 
 
