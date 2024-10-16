@@ -1,0 +1,27 @@
+[
+  {
+    "name": "abc",
+    "email": "abc@abc.com",
+    "preferred_time": "08:00 AM"
+  },
+  {
+    "name": "bcd",
+    "email": "bcd@bcd.com",
+    "preferred_time": "09:00 AM"
+  },
+  {
+    "name": "cde",
+    "email": "cde@cde.com",
+    "preferred_time": "23:00 PM"
+  },
+  {
+    "name": "abc",
+    "email": "ac@do.com",
+    "preferred_time": "09:00 AM"
+  },
+  {
+    "name": "abc",
+    "email": "ac@do.com",
+    "preferred_time": "09:00 PM"
+  }
+]
