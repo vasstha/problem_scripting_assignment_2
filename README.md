@@ -27,6 +27,11 @@ If you've cloned the repository or downloaded the source code:
    ```
    pip install .
    ```
+3. Run the application:
+   ```
+   python morning_greeting/main.py
+   ```
+
 
 ### 3. Install for development
 
@@ -40,7 +45,7 @@ If you're planning to modify the package:
    ```
    cd path/to/problem_scripting_assignment_2
    ```
-3. Install in editable mode:
+3. 3. Install in editable mode:
    ```
    pip install -e .
    ```
@@ -55,14 +60,6 @@ To run the unit tests:
    ```
    python -m unittest test
    ```
-
-## Contributing
-
-1. Fork the repository on GitHub
-2. Create a new branch for your feature or bug fix
-3. Commit your changes
-4. Push your branch to your fork
-5. Submit a pull request to the main repository
 
 ## License
 
