@@ -11,7 +11,7 @@ There are several ways to install the Morning Greetings package:
 You can install the latest version directly from the GitHub repository:
 
 ```
-pip install git+[https://github.com/yourusername/morning_greetings.git](https://github.com/vasstha/problem_scripting_assignment_2.git)
+pip install git+https://github.com/vasstha/problem_scripting_assignment_2.git
 ```
 
 
@@ -21,7 +21,7 @@ If you've cloned the repository or downloaded the source code:
 
 1. Navigate to the project directory:
    ```
-   cd path/to/morning_greetings
+   cd path/to/problem_scripting_assignment_2
    ```
 2. Install the package:
    ```
@@ -34,11 +34,11 @@ If you're planning to modify the package:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/morning_greetings.git
+   git clone https://github.com/vasstha/problem_scripting_assignment_2.git
    ```
 2. Navigate to the project directory:
    ```
-   cd morning_greetings
+   cd path/to/problem_scripting_assignment_2
    ```
 3. Install in editable mode:
    ```
