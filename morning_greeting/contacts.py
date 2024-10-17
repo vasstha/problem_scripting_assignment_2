@@ -8,11 +8,16 @@ class ContactNotFoundError(Exception):
 
 
 class Contacts:
+
+    """
+        Class contacts will contain the functions for managing contacts.
+    """
     def __init__(self, file_name = "contacts.json"):
         self.file_name = file_name
         self.contacts = self.load_contacts()
     
     def load_contacts(self):
+        # will load the contacts if there is any contacts from before or after user loads the contact 
         try:
             with open(self.file_name, 'r') as f:
                 return json.load(f)
@@ -20,10 +25,12 @@ class Contacts:
             return []
     
     def save_contacts(self):
+        #function for saving the contacts.
         with open(self.file_name, 'w') as f:
             json.dump(self.contacts, f, indent=4)
 
     def add_contact(self, name, email, preferred_time="08:00 AM"):
+    #function for adding the contact.
     # Check if email already exists in contacts
         if any(contact['email'] == email for contact in self.contacts):
             print(f"ContactExistsError raised for email: {email}")  # Debugging print
@@ -38,7 +45,7 @@ class Contacts:
         self.contacts.append(contact)
         print(f"Contact {name} with email {email} added successfully.")
 
-    #remove contact by name
+    #remove contact by name and email
     def remove_contact(self, name, email):
         for contact in self.contacts:
             if contact['name'] == name and contact['email'] == email:
@@ -61,7 +68,7 @@ class Contacts:
                 return contact
             
         return None
-    
+    """
     def update_contact(self, email, new_name = None, new_email = None, new_preferred_time = None):
         contact = self.get_contact(email)
         if contact:
@@ -79,7 +86,7 @@ class Contacts:
 
         else:
             raise ContactNotFoundError(f"No contact found with email {email}.")
-
+    """
     def list_contacts(self):
         for contact in self.contacts:
             print(f"Name : {contact['name']}, Email: {contact['email']}, Preferred Time: {contact['preferred_time']}")      
