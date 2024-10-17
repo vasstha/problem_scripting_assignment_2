@@ -2,6 +2,10 @@ import json
 import os
 
 class ContactsManager:
+
+    """
+    this class will manage loading the contact, adding new contact, and saving the contacts.
+    """
     def __init__(self, file_path='contacts.json'):
         self.file_path = file_path
         self.contacts = self.load_contacts()
