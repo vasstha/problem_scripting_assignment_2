@@ -19,7 +19,7 @@ setup(
     ],
     entry_points={
         'console_scripts':[
-            'morning_greetings = morning_greetings.main:main'  #points directly to the main function in main.py
+            'morning_greeting = morning_greeting.main:main'  #points directly to the main function in main.py
         ],
     },
     python_requires = '>=3.6'
