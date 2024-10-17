@@ -1,11 +1,13 @@
+#importing the necessary files.
 import os
 import sys
 import time
 
-
+#defining the system path.
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+#importing the other modules
 from contacts import Contacts, ContactExistsError, ContactNotFoundError
 from message_generator import generate_message
 from message_sender import send_message
@@ -14,6 +16,7 @@ from logger import log_message
 def main():
     contacts = Contacts()
 
+    #running the loop where the user gets options to run the program and select the task they want to do.
     while True:
         print("\nGood Morning Message Sender")
         print("1. Send Messages")
