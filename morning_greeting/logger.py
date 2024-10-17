@@ -1,6 +1,7 @@
 import datetime
 
 def log_message(contact, message):
+    #this function will store the sent message in a file
     with open("message_log.txt", "a") as log_file:
         log_file.write(f"{datetime.datetime.now()}"
                        f"- Sent to {contact['name']}: {message}\n")
