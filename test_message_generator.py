@@ -7,6 +7,6 @@ class TestMessageGenerator(unittest.TestCase):
 
     def test_message_includes_name(self):
         name = "Liv"
-        email = "liv@liv.com"
-        message = generate_message(name, email)
-        self.assertIn(name, email, message)
+        #email = "liv@liv.com"
+        message = generate_message(name)
+        self.assertIn(name, message)
