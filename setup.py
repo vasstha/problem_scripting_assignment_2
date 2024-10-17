@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 #from setuptools.config.expand import entry_points
 
 setup(
-    name = "morning_greetings", #the package name
+    name = "morning_greeting", #the package name
     version = "0.1",
     packages=find_packages(), #automatically find all packages in your project
     include_package_data=True, #include non-python files specified in MANIFEFST.in (if any)
